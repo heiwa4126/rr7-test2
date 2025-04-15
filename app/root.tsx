@@ -32,21 +32,21 @@ function Navbar() {
 	return (
 		<nav>
 			<NavLink to="">Home</NavLink>
-			<NavLink to="page1">Page 1</NavLink>
+			<NavLink to="about">About</NavLink>
 		</nav>
 	);
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="ja">
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<Meta />
 				<Links />
 			</head>
-			<body className="prose max-w-none">
+			<body className="prose max-w-none m-3">
 				<Navbar />
 				{children}
 				<ScrollRestoration />

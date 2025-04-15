@@ -10,14 +10,9 @@ export default {
 	// パターン 2 : `pnpm build && pnpm preview`
 	// ssr: false,
 
-	// パターン 3 : `pnpm start`
-	// ssr: true,
-	// async prerender() {
-	// 	return ["/"];
-	// },
-
+	// パターン 3 : `pnpm build && pnpm preview`
 	ssr: false,
 	async prerender() {
-		return ["/", "/page1"];
+		return ["/", "/about"];
 	},
 } satisfies Config;
