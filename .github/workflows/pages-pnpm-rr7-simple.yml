@@ -1,0 +1,80 @@
+# Simple workflow for deploying static content to GitHub Pages
+# See:
+# - https://vitejs.dev/guide/static-deploy.html#github-pages
+# - https://github.com/actions/checkout/tree/v4/#readme
+# - https://github.com/actions/setup-node#readme
+# - https://github.com/pnpm/action-setup#readme
+
+# 有効にする手順
+# 1. GitHub の該当レポジトリで Settings ⇒ Pages ⇒ Source を GitHub Actions に設定。
+# 2. 同じく GitHub で Settings ⇒ Environment で、New environment を押して、 "github-pages"という environment を選択 (1.で作られるらしい)
+# 3. この environment の Deployment branches and tags の Add deployment branch or tag rule で プルダウンで Ref type を Tag にして Name pattern を v*.*.* と書く。 (こっちでは正規表現が使えないから。変だけど我慢すること)
+# GitHub Enterprise で使う場合は、上記に加え、secrets.IS_ENTERPRISE に true を設定する。
+
+name: Deploy static content to Pages
+
+# Remove the duplicate "on" key
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build/client
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
