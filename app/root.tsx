@@ -32,6 +32,7 @@ function Navbar() {
 	return (
 		<nav>
 			<NavLink to="">Home</NavLink>
+			<NavLink to="products">製品一覧</NavLink>
 			<NavLink to="about">About</NavLink>
 		</nav>
 	);

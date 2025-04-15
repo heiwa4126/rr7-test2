@@ -1,0 +1,42 @@
+{
+	"smarthome-hub-b2": {
+		"name": "SmartHome Hub B2",
+		"summary": "家庭用スマートデバイスの統合ハブ",
+		"description": "SmartHome Hub B2は、照明、セキュリティカメラ、スマートロック、音声アシスタントなど複数のスマートデバイスを一括管理できる高性能なスマートホームハブです。Wi-Fi 6対応で高速通信を実現し、専用アプリからの遠隔操作や自動化ルールの設定も可能です。最新のセキュリティ対策が施され、家庭の安全と利便性を両立します。"
+	},
+	"ecoclean-air-purifier-a1": {
+		"name": "EcoClean Air Purifier A1",
+		"summary": "省エネ型空気清浄機",
+		"description": "EcoClean Air Purifier A1は、高性能HEPAフィルターと活性炭フィルターを搭載し、PM2.5や花粉、ウイルス、ニオイを効果的に除去する空気清浄機です。静音設計で就寝中でも快適に使用でき、スマートセンサーにより空気の状態をリアルタイムでモニタリングして自動運転を行います。低消費電力設計で、電気代を抑えつつ清潔な空気環境を維持できます。"
+	},
+	"ultranote-laptop-c5": {
+		"name": "UltraNote Laptop C5",
+		"summary": "ビジネスに最適な高性能ノートPC",
+		"description": "UltraNote Laptop C5は、第13世代Intel Coreプロセッサーと16GBメモリ、1TB SSDを搭載し、マルチタスクや動画編集も快適にこなせるパフォーマンスを誇ります。14インチのフルHDディスプレイと長時間駆動可能なバッテリーにより、外出先での作業も安心。軽量で耐久性の高いアルミニウムボディを採用し、持ち運びにも適しています。"
+	},
+	"smartwatch-fitpro-x3": {
+		"name": "SmartWatch FitPro X3",
+		"summary": "日常とフィットネスをサポートするスマートウォッチ",
+		"description": "SmartWatch FitPro X3は、心拍数・血中酸素・睡眠モニタリング機能を搭載した最新のスマートウォッチです。GPS機能付きでランニングやサイクリングの記録も可能。5ATMの防水設計により水泳にも対応し、長時間バッテリーで最大7日間の連続使用が可能です。iOS/Android両対応で、スマホ通知も受け取れます。"
+	},
+	"aurasound-wireless-earbuds-s2": {
+		"name": "AuraSound Wireless Earbuds S2",
+		"summary": "高音質と快適な装着感を両立した完全ワイヤレスイヤホン",
+		"description": "AuraSound Wireless Earbuds S2は、アクティブノイズキャンセリング機能と高解像度オーディオで、没入感のあるリスニング体験を提供します。軽量設計で長時間の使用でも快適な装着感を維持し、ケース込みで最大24時間の再生時間を実現。通話品質にも優れ、テレワークやオンライン会議にも最適です。"
+	},
+	"flexdesk-standing-desk-e1": {
+		"name": "FlexDesk Standing Desk E1",
+		"summary": "電動昇降式スタンディングデスク",
+		"description": "FlexDesk Standing Desk E1は、ワンタッチで高さ調節が可能な電動スタンディングデスクです。静音モーターによりスムーズな昇降を実現し、好みの高さを記憶するプリセット機能も搭載。頑丈なスチールフレームと広々とした天板で、在宅ワークやクリエイティブ作業にも快適に対応します。"
+	},
+	"pixelzoom-4k-monitor-v7": {
+		"name": "PixelZoom 4K Monitor V7",
+		"summary": "クリエイター向け27インチ4Kモニター",
+		"description": "PixelZoom 4K Monitor V7は、正確な色再現と広視野角を誇るIPSパネルを採用した27インチの4K UHDディスプレイです。HDR10対応で映像表現が豊かになり、USB-C接続による映像・給電の一本化も可能。写真編集や動画制作、ゲームにも最適な高性能ディスプレイです。"
+	},
+	"thermocook-multicooker-m10": {
+		"name": "ThermoCook MultiCooker M10",
+		"summary": "1台で10役の多機能電気調理鍋",
+		"description": "ThermoCook MultiCooker M10は、炊飯・スロークック・蒸し料理・炒め・ヨーグルト発酵など多彩な調理機能を備えた多機能調理家電です。予約調理や保温機能も充実しており、忙しい家庭でも簡単に健康的な食事を用意できます。タッチパネル式の操作画面で直感的に使えるのも魅力です。"
+	}
+}

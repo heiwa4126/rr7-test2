@@ -3,7 +3,7 @@ import type { Route } from "./+types/about";
 
 export function meta({}: Route.MetaArgs) {
 	return [
-		{ title: `About ${projectName}` },
+		{ title: `About - ${projectName}` },
 		{
 			name: "description",
 			content: "このプロジェクトの説明",

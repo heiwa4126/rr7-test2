@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { projectName } from "~/consts";
 import type { Route } from "./+types/home";
 import logoDark from "/logo-dark.svg";
 import logoLight from "/logo-light.svg";
 
 export function meta({}: Route.MetaArgs) {
 	return [
-		{ title: "New React Router App" },
-		{ name: "description", content: "Welcome to React Router!" },
+		{ title: `Home - ${projectName}` },
+		{ name: "description", content: "React Router v7 へようこそ" },
 	];
 }
 
