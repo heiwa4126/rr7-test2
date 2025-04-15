@@ -5,4 +5,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
 	plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+	// build: {
+	// 	rollupOptions: {
+	// 		output: {
+	// 			manualChunks: {
+	// 				r: ["react", "react-dom"],
+	// 				s: ["react-router"],
+	// 			},
+	// 		},
+	// 	},
+	// },
 });
