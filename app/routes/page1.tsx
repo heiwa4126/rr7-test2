@@ -16,7 +16,10 @@ export default function Page1() {
 		<main>
 			<h1>Page 1</h1>
 			<p>わざと prerenderのリストに入っていないページを作ってみた。</p>
-			<p>どんな初期HTMLが帰ってくるか観察すること (HydrateFallback() が帰ってくるはず)。</p>
+			<p>
+				どんな初期HTMLが帰ってくるか観察すること (HydrateFallback() または home.tsx
+				と同じものが帰ってくるはず)。
+			</p>
 			<p>
 				またこのページは「ソフト404」とか「フォールバック」に対応してないサーバだと、直リンやリロードができません。
 			</p>
