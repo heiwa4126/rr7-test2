@@ -12,7 +12,7 @@ SSR: false で、全ページ pre-render してある(hydration 済み)。
 
 ## 開発
 
-pnpm 使用
+[pnpm](https://pnpm.io/) 使用
 
 ```sh
 # モジュールのインストール
@@ -21,15 +21,18 @@ pnpm i
 pnpm dev
 # ビルドしてプレビュー
 pnpm build && pnpm preview
+## ↑ssr:false なので `pnpm start` (react-router-serve) はエラーになる
 # リフォーマット
 pnpm format
 # 厳密な型チェック(意外とエラーが出る)
 pnpm typecheck
 ```
 
-## Cloudflare Pages
+これで OK ならデプロイする。
 
-<https://rr7-test2.pages.dev/>
+## Cloudflare Pages へのデプロイ
+
+実際にデプロイしたやつ: <https://rr7-test2.pages.dev/>
 
 設定は
 GitHub 連携で
@@ -38,7 +41,8 @@ GitHub 連携で
 - ビルド コマンド: `pnpm install --frozen-lockfile && pnpm run build`
 - ビルド出力ディレクトリ: `build/client`
 
-で。環境変数設定するの忘れた。NODE_VERSION に 22、PNPM_VERSION に 10。プロダクションとプレビューの 2 つあるのを忘れないこと。
+で。環境変数設定するの忘れた。NODE_VERSION に 22、PNPM_VERSION に 10。
+プロダクションとプレビューの 2 つあるのを忘れないこと。
 
 CDN からほぼ無制限に配信できるなら、モジュールを jsDelivr 等から取る必要はないので、バンドルしたそのままにしてある。
 
