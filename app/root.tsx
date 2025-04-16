@@ -34,6 +34,7 @@ function Navbar() {
 			<NavLink to="">Home</NavLink>
 			<NavLink to="products">製品一覧</NavLink>
 			<NavLink to="about">About</NavLink>
+			<NavLink to="page1">Page 1 (test)</NavLink>
 		</nav>
 	);
 }

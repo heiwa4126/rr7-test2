@@ -3,7 +3,9 @@
 React Router v7 の Framework モードで、GitHub Pages カスタムドメインや
 Cloudflare Pages でデプロイするためのテストプロジェクト。
 
-SSR: false で、全ページ pre-render してある(hydration 済み)。
+SSR: false で、全ページ pre-render してある (hydration してる、ということ)。
+
+追記: わざと pre-render しない [page1](app/routes/page1.tsx) を追加してみた。
 
 ## TODO
 
