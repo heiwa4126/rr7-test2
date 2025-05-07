@@ -1,12 +1,14 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-button {
+button[type="button"] {
 	@apply text-gray-800 font-medium py-0.5 px-2 rounded-sm;
 	@apply bg-gray-100 hover:bg-gray-200 active:bg-gray-300 border border-gray-400;
 	@apply focus:outline-none focus:ring-2 focus:ring-gray-500;
-}
 
+	@apply dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600 dark:border-gray-500
+		dark:focus:ring-gray-400;
+}
 nav {
 	@apply mb-6;
 }

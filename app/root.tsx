@@ -34,6 +34,7 @@ function Navbar() {
 			<NavLink to="">Home</NavLink>
 			<NavLink to="products">製品一覧</NavLink>
 			<NavLink to="about">About</NavLink>
+			<NavLink to="page1">Page 1 (test)</NavLink>
 		</nav>
 	);
 }
@@ -47,7 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Meta />
 				<Links />
 			</head>
-			<body className="prose max-w-none m-3">
+			<body className="prose dark:prose-invert dark:bg-[#242424] max-w-none m-3">
 				<Navbar />
 				{children}
 				<ScrollRestoration />

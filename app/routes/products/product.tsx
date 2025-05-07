@@ -1,6 +1,6 @@
 import { Link } from "react-router";
+import products from "~/assets/products.json";
 import { projectName } from "~/consts";
-import products from "../../assets/products.json";
 import type { Route } from "./+types/product";
 import type { Product, Products } from "./types";
 import productImage from "/dummy.png";
@@ -23,11 +23,10 @@ export default function EachProduct({ params }: Route.MetaArgs) {
 	return (
 		<>
 			<h1>{product.name}</h1>
-			<h2>製品情報</h2>
-			<p>{product.description}</p>
 			<div>
 				<img src={productImage} alt={`${product.name}製品画像`} />
 			</div>
+			<p>{product.description}</p>
 			<p>
 				<Link to="/products">製品一覧に戻る</Link>
 			</p>
