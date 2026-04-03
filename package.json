@@ -8,18 +8,21 @@
 		"start": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc",
 		"preview": "serve -p 4173 ./build/client",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+		"preinstall": "pnpm audit",
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
-		"@react-router/node": "^7.13.2",
-		"@react-router/serve": "^7.13.2",
+		"@react-router/node": "^7.14.0",
+		"@react-router/serve": "^7.14.0",
 		"isbot": "^5.1.37",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
-		"react-router": "^7.13.2"
+		"react-router": "^7.14.0"
 	},
 	"devDependencies": {
-		"@react-router/dev": "^7.13.2",
+		"@react-router/dev": "^7.14.0",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.2.2",
 		"@types/node": "^25.5.0",
