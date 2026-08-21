@@ -6,8 +6,8 @@ export function meta({}: Route.MetaArgs) {
 		{ title: `About - ${projectName}` },
 		{
 			name: "description",
-			content: "このプロジェクトの説明",
-		},
+			content: "このプロジェクトの説明"
+		}
 	];
 }
 

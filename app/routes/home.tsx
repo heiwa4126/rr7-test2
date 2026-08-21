@@ -7,7 +7,7 @@ import logoLight from "/logo-light.svg";
 export function meta({}: Route.MetaArgs) {
 	return [
 		{ title: `Home - ${projectName}` },
-		{ name: "description", content: "React Router v7 へようこそ" },
+		{ name: "description", content: "React Router v7 へようこそ" }
 	];
 }
 

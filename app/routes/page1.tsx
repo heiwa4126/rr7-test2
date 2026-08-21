@@ -6,8 +6,8 @@ export function meta({}: Route.MetaArgs) {
 		{ title: `Page 1 - ${projectName}` },
 		{
 			name: "description",
-			content: "このプロジェクトの説明",
-		},
+			content: "このプロジェクトの説明"
+		}
 	];
 }
 

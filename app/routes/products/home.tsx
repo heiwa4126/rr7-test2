@@ -9,8 +9,8 @@ export function meta({}: Route.MetaArgs) {
 		{ title: `製品一覧 - ${projectName}` },
 		{
 			name: "description",
-			content: "製品一覧",
-		},
+			content: "製品一覧"
+		}
 	];
 }
 

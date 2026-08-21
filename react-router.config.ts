@@ -20,7 +20,7 @@ export default {
 	async prerender() {
 		const productPages = productsKeys.map((key) => `/products/${key}`);
 		return ["/", "/about", "/products", ...productPages];
-	},
+	}
 
 	// パターン 4 : `pnpm build && pnpm start`
 	// ssr: true,

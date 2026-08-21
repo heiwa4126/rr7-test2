@@ -5,7 +5,7 @@ export default [
 	route("about", "routes/about.tsx"),
 	...prefix("products", [
 		index("routes/products/home.tsx"),
-		route(":id", "routes/products/product.tsx"),
+		route(":id", "routes/products/product.tsx")
 	]),
-	route("page1", "routes/page1.tsx"),
+	route("page1", "routes/page1.tsx")
 ] satisfies RouteConfig;

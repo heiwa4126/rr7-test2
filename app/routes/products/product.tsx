@@ -12,8 +12,8 @@ export function meta({ params }: Route.MetaArgs) {
 		{
 			title: `製品 ${product.name} - ${projectName}`,
 			name: "description",
-			content: `${product.name}という製品のページ`,
-		},
+			content: `${product.name}という製品のページ`
+		}
 	];
 }
 

@@ -5,8 +5,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
 	plugins: [tailwindcss(), reactRouter()],
 	resolve: {
-		tsconfigPaths: true,
-	},
+		tsconfigPaths: true
+	}
 	// build: {
 	// 	rollupOptions: {
 	// 		output: {
